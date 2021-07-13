@@ -5,6 +5,6 @@ from funcs import sort_files_in_a_folder
 import file_types_dict
 
 if __name__=="__main__":
-    mypath='/home/aaryan/Downloads'
+    mypath=''
     sort_files_in_a_folder(mypath)
 

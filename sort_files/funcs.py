@@ -12,7 +12,11 @@ def sort_files_in_a_folder (mypath):
     file_type_variation_list = []
     filetype_folder_dict = {}
     for file in files:
-        filetype = file.split('.')[1]
+        try:
+            filetype = file.split('.')[1]
+            print(filetype)
+        except:
+            filetype = ""
         if filetype not in file_type_variation_list:
             file_type_variation_list.append(filetype)
 
@@ -30,7 +34,11 @@ def sort_files_in_a_folder (mypath):
                 os.mkdir(new_folder_name)
     for file in files:
         src_path = mypath+'/'+file
-        filetype = file.split('.')[1]
+        try:
+            filetype = file.split('.')[1]
+            print(filetype)
+        except:
+            filetype = ""
         if filetype in filetype_folder_dict.keys():
             dest_path = filetype_folder_dict[str(filetype)]
             shutil.move(src_path, dest_path)

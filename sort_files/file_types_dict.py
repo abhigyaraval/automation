@@ -9,7 +9,6 @@
 
 # Creating the list/dicts
 
-
 file_type_dict = {
     'pdf': 'PDF',
     'txt': 'Text',
@@ -20,22 +19,7 @@ file_type_dict = {
     'jpeg': 'Picture',
     'png': 'Picture',
     'tgz': 'Compressed',
-    'deb': 'DEB Package'
+    'deb': 'DEB Package',
+    '': 'No extension files'
 }
-# filetype = 'txt'
-# for key in file_type_dict:
-#     print(filetype)
-#     print(key)
-#     print(file_type_dict[key])
-#     if filetype == key:
-#         folder_name_part = file_type_dict[key]
-#         break
-#     else:
-#         folder_name_part = filetype
-#     print(folder_name_part)
-#     print('-------')
-# list.append(ftype('pdf', 'PDF'))
-# list.append(ftype('txt', 'Test'))
-# list.append(ftype('tar.gz', 'TAR.GZ Packages'))
-# list.append(ftype('zip', 'Zip'))
-#
+
